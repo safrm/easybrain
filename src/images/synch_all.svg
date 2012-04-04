@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3074"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   width="50"
+   height="45"
+   sodipodi:docname="synch_all.svg">
+  <metadata
+     id="metadata3080">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3078">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 22.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="50 : 22.5 : 1"
+       inkscape:persp3d-origin="25 : 15 : 1"
+       id="perspective9" />
+    <inkscape:perspective
+       id="perspective2823"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="868"
+     inkscape:window-height="672"
+     id="namedview3076"
+     showgrid="false"
+     inkscape:zoom="5.8"
+     inkscape:cx="56.22306"
+     inkscape:cy="25.172413"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3074" />
+  <text
+     xml:space="preserve"
+     style="font-size:35.13298798px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+     x="4.0758686"
+     y="17.314123"
+     id="text4160"
+     sodipodi:linespacing="125%"
+     transform="scale(0.92771868,1.077913)"><tspan
+       sodipodi:role="line"
+       id="tspan4162"
+       x="4.0758686"
+       y="17.314123"
+       style="font-size:14.05319595px">synch</tspan><tspan
+       sodipodi:role="line"
+       x="4.0758686"
+       y="34.880619"
+       style="font-size:14.05319595px"
+       id="tspan4189">all</tspan></text>
+</svg>

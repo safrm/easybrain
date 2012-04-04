@@ -1,0 +1,7 @@
+Name: new item
+Link: http://seznam.cz
+Link: item10
+Mail: Mirek Safr <safrm@seznam.cz>
+Mail: miroslav.safr@gmail.com
+Data:
+#

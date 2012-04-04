@@ -1,0 +1,42 @@
+#!/bin/sh
+#require <git-name>/<git-name>.spec
+
+# executing in pwd or pass the directory as 1st parameter
+if [ $# -gt 0 ]; then
+    PWD_DIR=$PWD
+    cd $1
+fi
+
+BASENAME=`basename "$PWD"`
+VERSION=`git describe --abbrev=0 2> /dev/null`
+if [ "x$VERSION" = "x" ]
+then
+    echo "error: version not detected"
+fi
+echo "preparing $BASENAME-$VERSION"
+
+#cleaning
+rm -fr ./rpm
+mkdir -p rpm/SOURCES rpm/BUILD rpm/SRPMS rpm/RPMS/i386 
+
+#update version in spec from git tag
+#sed -i".bkp" "s/^Version:.*/Version:    ${VERSION}/" ./$BASENAME.spec && rm $BASENAME.spec.bkp
+sed  "s/^Version:.*/Version:    ${VERSION}/" ./$BASENAME.spec > rpm/SOURCES/$BASENAME-$VERSION.spec
+
+#update release no
+#NEW_RELEASE=$[`awk '/Release/ {print $2}' $BASENAME.spec`+1]
+
+#clear current sources
+#qmake && make distclean
+qmake-qt4 && make distclean
+
+#add rpm exclude
+tar --exclude-vcs --exclude=build/* --exclude=debian/* --exclude=*.tar.bz2 --exclude=rpm/* -cvjf rpm/SOURCES/$BASENAME-$VERSION.tar.bz2  ./
+echo "tar ball OK"
+
+#rpmbuild ./<git-name>.spec
+#--target i386
+rpmbuild -ba ./rpm/SOURCES/$BASENAME-$VERSION.spec --define="_topdir `pwd`/rpm" --verbose
+
+find . |grep -i $BASENAME-$VERSION
+cd $PWD_DIR

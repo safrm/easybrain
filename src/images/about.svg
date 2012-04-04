@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3074"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   width="50"
+   height="45"
+   sodipodi:docname="about.svg">
+  <metadata
+     id="metadata3080">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3078">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3688">
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1;"
+         offset="0"
+         id="stop3690" />
+      <stop
+         style="stop-color:#ffff00;stop-opacity:0;"
+         offset="1"
+         id="stop3692" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-56.034482 : 53.87931 : 1"
+       inkscape:vp_y="-500 : 866.0254 : 0"
+       inkscape:vp_z="50 : 22.5 : 1"
+       inkscape:persp3d-origin="25 : 15 : 1"
+       id="perspective10" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3688"
+       id="linearGradient3694"
+       x1="-50.393935"
+       y1="-36.724136"
+       x2="7.9801393"
+       y2="-36.724136"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1124"
+     id="namedview3076"
+     showgrid="false"
+     inkscape:zoom="5.8"
+     inkscape:cx="21.206897"
+     inkscape:cy="55"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3074" />
+  <text
+     xml:space="preserve"
+     style="font-size:25.57587814px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Andale Mono"
+     x="20.19227"
+     y="32.491802"
+     id="text2812"
+     transform="scale(1.0301976,0.97068756)"><tspan
+       sodipodi:role="line"
+       id="tspan2814"
+       x="20.19227"
+       y="32.491802">i</tspan></text>
+  <path
+     sodipodi:type="star"
+     style="opacity:0.5964912;fill:url(#linearGradient3694);fill-opacity:1;stroke:#860000;stroke-width:4;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     id="path2914"
+     sodipodi:sides="8"
+     sodipodi:cx="-21.206898"
+     sodipodi:cy="-36.724136"
+     sodipodi:r1="27.415962"
+     sodipodi:r2="13.707981"
+     sodipodi:arg1="0.65607906"
+     sodipodi:arg2="1.0487781"
+     inkscape:flatsided="true"
+     inkscape:rounded="0"
+     inkscape:randomized="0"
+     d="m 0.5172406,-19.999998 -18.1886046,10.4628987 -20.259672,-5.4628987 -10.462899,-18.188604 5.462899,-20.259673 18.188604,-10.462898 20.2596724,5.462898 10.4628989,18.188605 -5.4628987,20.259672 z"
+     transform="matrix(0.65870521,0,0,0.62065463,39.313919,45.2068)" />
+</svg>

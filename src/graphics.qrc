@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/about.svg</file>
+        <file>images/backup_all.svg</file>
+        <file>images/backup.svg</file>
+        <file>images/clear.svg</file>
+	<file>images/close.svg</file>
+	<file>images/close_other_tabs.svg</file>
+        <file>images/copy.svg</file>
+        <file>images/cut.svg</file>
+        <file>images/debug.svg</file>
+        <file>images/delete.svg</file>
+        <file>images/download_latest.svg</file>
+        <file>images/export_as.svg</file>
+        <file>images/insert_time.svg</file>
+        <file>images/insert_date.svg</file>
+        <file>images/mail_file.svg</file>
+        <file>images/new.svg</file>
+        <file>images/open.svg</file>
+        <file>images/paste.svg</file>
+        <file>images/print.svg</file>
+        <file>images/redo.svg</file>
+        <file>images/quit.svg</file>
+        <file>images/save.svg</file>
+        <file>images/select_all.svg</file>
+        <file>images/show_clipboard.svg</file>
+        <file>images/synch.svg</file>
+        <file>images/synch_all.svg</file>
+        <file>images/tray_icon.svg</file>
+        <file>images/undo.svg</file>
+        <file>images/view_data.svg</file>
+        <file>images/view_rich.svg</file>
+        <file>images/view_source.svg</file>
+        <file>images/view_text.svg</file>
+        <file>images/def.svg</file>
+    </qresource>
+</RCC>

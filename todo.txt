@@ -1,0 +1,182 @@
+TODO - NEXT STEPS (points 1-5)
+-----------------------------
+Bug:3 - Win: installation check
+Bug:3 - Win: qmake copile stuff
+Bug:4 - Text view: delete everything except data and save
+Bug:4 - Rich view save
+Bug:1 - upload icon
+New:3 - linux requires
+New:3 - Export to txt
+Bug:3 - Windows: sed change log version
+Chg:3 - Readme version to install process
+New:5 - ftp: synchro
+New:3 - merging synchronization conflicts diff, duplicate
+New:5 - removing old files on ftp (keep last x)
+--- 0.0.6  ---
+
+New:4 - new icon PlainData view
+New:4 - save PlainData EBTextEdit::writeFile
+New:2 - on save remove extra characters spaces tabs line endings
+New:4 - xml item add version attribute
+New:4 - xml new keywords: image0+, link0+, mail 0+ or handle it in data
+New:4 - xml atributes divide to mandatory (Name1 and Data1 ) and optional (Date0-1 Priority0-1 groups0+ tags0+ )
+Bug:2 - Send by email with attachement does not work somehow + possibility attach more files
+New:4 - views: Second view plain text/graphicaly formated/source : RichView
+New:4 - views: Only data view
+New:3 - Web blog publishing
+New:3 - file explorer: right click add move to archive
+New:3 - links hightlight
+New:3 - tags/streams/groups: work, personal/private, public
+New:2 - textEdit->toPlainText() tooltip replace by formated one or attach update to hovered.
+New:2 - right fileexplorer menu moving
+New:2 - diff
+New:2 - pictures (svg -> export png) graphicstools: line, text, box, class
+New:2 - Settings: Tabulator size / insert tabs or lines
+New:2 - fulltime search
+New:1 - DEL to delete files files in project explorer
+New:1 - print out cmdline parameters + descriptions
+New:1 - insert as link
+New:1 - create new idea from selection
+New:1 - print to pdf
+New:1 - picture with the same name  - qsplitter
+New:1 - drag and drop
+New:1 - keywords hightlight
+New:1 - idea manager
+New:1 - ctrl+a only data
+New:1 - StatisticsDock -  how long it is booted up
+New:1 - q/d implem
+New:1 - right popup in tray - quit, lock screen, switch project
+New:1 - searching, file search - cached dirs
+New:1 - searching buttons cached /full
+New:1 - win / lin  executables,  file formats
+New:1 - cmd/gui
+New:1 - autocomplete
+New:1 - server
+New:1 - google
+New:1 - file-roller
+New:1 - categories: folders, files, foto,
+New:1 - mutliplatform shortcuts
+New:1 - bg activity - clever
+New:1 - source code search - prednastaveny filtry
+New:1 - qt creator search
+New:1 - freespace
+New:1 - diagnostic - cache size, time, disk memory
+New:1 - google docs
+New:1 - rename project
+New:1 - CurrentProjectFolder with type
+New:1 - folder creation when project exist
+New:1 - type to   QHash<QString, bool> isWorking;
+New:1 - register mimetype .eb
+New:1 - external files container
+New:1 - toolbar launcher: cmd line, manager
+New:1 - online help - http://mywebcom/fwlink/?LinkId=195284
+
+DONE - changelog
+-----------------------------
+--- 0.0.5 - opensource ---
+Bug:4 - save in different views integrity check
+Chg:5 - hardcoded username password remove from git
+--- 0.0.4  ---
+Bug:3 - only data export (needs xmldocument change - used workaround with previous file)
+New:3 - File comparation for unit tests
+New:5 - Started unittest load/save file comparation in different views
+Chg:2 - Keywords QList init to static
+Chg:1 - full version caption in mainwindow only for debug
+Chg:1 - statistic default off
+Bug:4 - Rich view save
+Bug:4 - remove saveTextEditToFile
+New:1 - bold verbs in quiestions Do you want to?
+New:5 - ftp: latest synchro download
+New:5 - ftp: finish ftp upload
+New:4 - proper project and author webpage
+New:2 - file explorer:   open as source
+Chg:4 - proper project and author webpage - new domain and email
+Bug:3 - file explorer: multiselection behaviour: MultiSelection changed to ExtendedSelection
+New:2 - Simple license
+New:5 - when you save file - update file  explorer content - name and date
+New:4 - name update in the list - on save (document names renaming)
+Bug:4 - EBTextEdit::itemNameFromDocument() - double string
+New:2 - About dialog
+New:5 - License headers, license.txt
+New:2 - file explorer: open/delete more files - multiselect
+New:5 - views: Simple text view saving to xml format
+New:5 - Save xml EBTextEdit::writeFile()
+Chg:3 - QMap for keywords to QList/QPair to avoid sorting
+Bug:5 - EBTextEdit::writeFile
+New:1 - close other windows, close icons
+New:1 - File IO debuginfo
+Bug:3 - Initial checked state in View Toolbar, update when view changed or new/open item
+Chg:5 - EditorTabWidget::saveAsCurrentItem to writeFile
+New:4 - enable/disable actions in menu an toolbars when no item open
+Bug:3 - Default view enum strings in conf file
+New:1 - Copy Full file name icon
+New:5 - Save xml EBTextEdit::writeFile() 1/2
+Chg:3 - itemNameFromDocument / itemNameFromFile
+Chg:3 - save only when document is modified
+Bug:3 - missing restore waiting cursor
+Bug:5 - default xml template
+New:5 - Open 1 file only 1x check
+New:4 - views toolbar, QActionGroup enable/disable when nothing is open
+Chg:1 - new def.svg icon, all graphics to svg
+Chg:3 - ViewType enum refactoring
+New:3 - all codecs to UTF-8
+Bug:5 - deleting files, closing open file tab and file explorer list update
+New:5 - Item name extracted from xml element in tooltips and fileexplorer
+Chg:4 - move m_XmlKeywords to DataOwnerSingl::Keywords, added Txt and Xml keywords
+New:4 - views: Switching between views
+New:3 - Quit in toolbar (only debug)
+New:1 - cmdline help and version
+New:4 - Update version to readme.txt
+New:1 - default EditorViewType to settings - general/DefaultOpenViewType,  DefaultView
+New:4 - views - second view plain text/graphicaly formated/source: Text/Source working
+New:4 - open2 with highlight
+New:1 - print icon
+New:1 - Projects toolbar
+New:1 - icons: exit, about , new
+Bug:4 - Object::connect: No such slot EditorTabWidget::selec() in src/mainwindow.cpp:275
+New:1 - runtime QT version
+New:4 - missing icons
+Bug:3 - COMPILE_DATE_FORMAT - month and day order
+New:5 - debug window setname
+New:4 - copy/paste
+New:5 - setDocumentTitle bug
+New:4 - Qt info in qmake
+New:2 - ~/QtSDK/Desktop/Qt/474/gcc/bin/qmake
+New:3 - xml highlighting
+New:3 - icons in editor tab according view
+New:3 - clipboard preview button - button which would show tooltip or pop window with clipboard content
+New:3 - moving filename somewhere else from tabToolTip and set up new tooltip with name
+New:3 - tar.bz2 //tools win or zip
+New:3 - packing to zip for better compatibility with windows and password support
+New:3 - project password
+New:3 - "-t" startup in tray feature
+Bug:3 - delete does not work
+New:3 - backup not full path
+New:3 - send by email
+New:3 - name: or with space
+New:3 - smaller  tabulator
+New:3 - <project_name>.eb filename //could be small and without spec chars - check
+New:3 - current date and time buttons
+New:3 - double click packed files
+Bug:3 - working delete
+New:3 - backup explorer
+New:3 - change FileListWidget : QListWidget //QTreeWidget
+Bug:3 - remove 1st col from fileexplorer
+New:3 - copy full file name
+New:3 - default no debug window
+New:3 - new item name
+New:3 - backup folder
+New:3 - data folder
+New:3 - view debug
+New:3 - new file on start
+New:3 - configuration files - projects, starter, program settings,
+New:3 - debugging window
+New:3 - template to const QString
+New:3 - new file to manager
+New:3 - version for tagging
+New:3 - save as set up the name
+New:3 - git version update
+New:3 - COMPILE_TIMESTAMP
+New:3 - Timestamp from git
+New:3 - const QString program = QFileInfo("/proc/self/exe").symLinkTarget().toLatin1();
+New:3 - lock screen on middleclick

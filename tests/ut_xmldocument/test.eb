@@ -1,0 +1,11 @@
+<item>
+ <name>testing name</name>
+ <date>2011_12_21_13:23</date>
+ <groups>one,two</groups>
+ <priority>1</priority>
+ <tags>tag1,tag2</tags>
+ <data><![CDATA[
+ Example text with html tags
+one
+      two]]></data>
+</item>

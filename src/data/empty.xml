@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<item>
+    <name>Name</name>
+    <date>2011_12_21_13:23</date>
+    <groups>one,two</goups>
+    <priority>1</priority>
+    <tags>tag1,tag2</tags>
+    <data><![CDATA[
+Example text with html tags
+
+    ]]></data>
+</item>
