@@ -2,7 +2,7 @@ Easybrain 0.0.2-78-g779689f* (20120227_1146)
 -------------------------------------------------------------------------------
 Autor : Miroslav Safr
 Contact: miroslav.safr@gmail.com
-Web: http://safrm.net/
+Web: http://safrm.net/projects/easybrain/
 
 Introduction:
 -------------------------------------------------------------------------------
@@ -26,6 +26,21 @@ command line parameters:
 -h  --help      print command line usage
 -t  --tray      start minimized in tray
 -v  --version   print version
+
+
+configuration file
+-------------------------------------------------------------------------------
+/home/<USER>/.config/easybrain/general.conf
+[General]
+CurrentProject=test  ; name of project folder
+AutoSaveOnExit=true  ; settings saving
+UserDataDir=/media/p/work/mirek/easybrain/build  ; path to user data
+PackingPassword=easybrain123 	                 ; password used for zip encoding
+DefaultOpenViewType=XmlSource                    ; default view - XmlSource, Text, RichFormat, OnlyPlainData
+FtpAddress=ftp://<myftpserver>.com/<dir>/        ; server path for synchronization                
+Username=<FTP-USERNAME>                          ; ftp username
+Password=<FTP-PASSWORD>                          ; ftp password
+LastSynchTime=<TIMESTAMP>                        ; timestamp of last succesful synchronization
 
 
 filesystem:
