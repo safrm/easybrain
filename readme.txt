@@ -1,4 +1,4 @@
-Easybrain 0.0.2-78-g779689f* (20120227_1146)
+Easybrain 
 -------------------------------------------------------------------------------
 Autor : Miroslav Safr
 Contact: miroslav.safr@gmail.com
