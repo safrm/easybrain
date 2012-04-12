@@ -83,4 +83,4 @@ OTHER_FILES += \
     notes.txt \
     src/data/empty.xml \
     readme.txt \
-    license.txt
+    LICENSE.LGPL

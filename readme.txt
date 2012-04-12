@@ -16,10 +16,8 @@ I try to accent data portability and reusability in many different environments.
 
 License
 -------------------------------------------------------------------------------
-available in license.txt
-I choose Creative Commons — Attribution-NoDerivs 3.0 Unported because I would like to choose later if I want to opensouce it or reuse it in some commerical work later.
-This project does not need source contribution at this moment and the result can be used as much as it's needed.
-
+Since 0.0.5 changed to LGPL 2.1, (LICENSE.LGPL),
+previous releases Creative Commons — Attribution-NoDerivs 3.0 Unported
 
 command line parameters:
 -------------------------------------------------------------------------------
