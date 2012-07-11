@@ -34,6 +34,8 @@
 #include <QUrl>
 #include <QDebug>
 #include <QMetaType>
+#include <QPrintDialog>
+#include <QPrinter>
 
 #include "editortabwidget.h"
 #include "dataowner.h"
@@ -103,7 +105,8 @@ public:
         textViewAction(NULL),
         sourceViewAction(NULL),
         dataViewAction(NULL),
-        changeViewActionGroup(NULL)
+        changeViewActionGroup(NULL),
+        m_pPrinter(NULL)
     {};
 
     QIcon iconAccordingViewType(EditorView::Type viewType) const;
@@ -112,6 +115,7 @@ public:
     QAction* sourceViewAction;
     QAction* dataViewAction;
     QActionGroup* changeViewActionGroup;
+    QPrinter* m_pPrinter;
 };
 
 QIcon EditorTabWidget_private::iconAccordingViewType(EditorView::Type viewType) const
@@ -372,8 +376,23 @@ void EditorTabWidget::insetDate()
         currentTextEdit()->insertPlainText(DO->now(DataOwnerSingl::DATE_SIMPLE_FORMAT));
 }
 
+QPrinter* EditorTabWidget::printer()
+{
+  if(d->m_pPrinter== NULL)
+    d->m_pPrinter = new QPrinter(QPrinter::HighResolution);
+  return d->m_pPrinter;
+}
+
 void EditorTabWidget::printCurrentItem()
 {
+    EBTextEdit* pTextEdit = currentTextEdit();
+    if(!pTextEdit)
+        return;
+    QPrintDialog dlg(printer(), this);
+    if (dlg.exec() != QDialog::Accepted)
+      return;
+
+    pTextEdit->document()->print(printer());
 }
 
 EBTextEdit* EditorTabWidget::textEditByFilename(const QString & sFilename) const

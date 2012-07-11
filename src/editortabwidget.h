@@ -31,6 +31,7 @@ class QString;
 class EBTextEdit;
 class QMenu;
 class QActionGroup;
+class QPrinter;
 class EditorTabWidget_private;
 
 namespace EditorView  {
@@ -53,6 +54,7 @@ public:
     EBTextEdit* textEditByFilename(const QString & sFilename) const;
     bool isFileOpen(const QString & sFilename) const;
     QActionGroup* changeViewActionGroup();
+    QPrinter* printer();
 
 signals:
     void currentViewChanged(EditorView::Type type);
