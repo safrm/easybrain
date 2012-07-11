@@ -20,7 +20,7 @@ INSTALLS    += docs
 #unix:docs.extra = `sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_VERSION_FULL ($$APP_DATE_SYS)/\' ./readme.txt && rm readme.txt.bkp`
 unix:docs.path  = /usr/share/doc/easybrain
 win32:docs.path  = /
-docs.files  = todo.txt license.txt readme.txt
+docs.files  = todo.txt LICENSE.LGPL readme.txt
 
 
 INSTALLS    += readme

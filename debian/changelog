@@ -1,162 +1,211 @@
-easybrain (0.0.5-1) unstable; urgency=low
+easybrain (0.1.0-1) unstable; urgency=low
+  * Int: updated changelog Chg: license.txt changed to LICENSE.LGPL
+  * New:1 - print normal and to pdf
+  * Changes: updated deb dependencies
+  * Chg: Properly relicensed to LGPL 2.1
+  * Int: Clean generated version in readme
+  * Chg: updated configuraion file description
+  * initial import for opensource release 0.0.5
+  * first commit
+ -- safrrmir-ul000590 <miroslav.safr@gmail.com>  Wed, 11 Jul 2012 15:17:37 +0300
+
+easybrain (0.0.5) unstable; urgency=low
+  * preparing 0.0.5 1st opensource release
   * Chg:5 - hardcoded username password remove from git
- -- Miroslav Safr <miroslav.safr@gmail.com>  Wed, 04 Apr 2012 14:41:36 +0300
-
-easybrain (0.0.4-1) unstable; urgency=low
-  * Chg: gitignore update
-  * New: new logo
-  * New: windows packaging
-  * Int: new windows icon
-  * Chg: improved win install
-  * Chg: updated legal stuff
-  * New: 1st unit test for verifying load/save xml format Int: legal stuff
-  * New: divided pro file to subdirs, separated common.pri
-  * New: full and short versions from git
-  * New: unittest fetching viewtypes
-  * New: Started unittest load/save file comparation in different views Chg: Keywords QList init to static
-  * New: Qcompare for long long New: Common test_support.h file
-  * New:3 - File comparation for unit tests
-  * Chg: LE hunting, Data \n logic, New: 2ways of file comparation in unittest
-  * Chg: writefile refactoring, unit test read/write separated
+  * preparing 0.0.4
   * Chg: cleaning generated .ebg files
- -- Miroslav Safr <miroslav.safr@gmail.com>  Wed, 21 Mar 2012 12:08:37 +0200
-
-easybrain (0.0.3-1) unstable; urgency=low
-  * New: central editortabwidget - MDI view and refactoring
-  * Fix: init editor's rightclick menu
-  * Fix: various slot changes
-  * Chg: moving filename somewhere else from tabToolTip and set up new tooltip with name
-  * New: clipboard preview button - button which would show tooltip or pop window with clipboard content
-  * New: EditorTabWidget_private and tooltips in editor
-  * New: icons in editor tab according view
-  * New: Working simple ftp upload
-  * New: new ftp upload implementation
-  * New: Xml format
-  * Fix: 5 - setDocumentTitle bug
-  * New: 4 - copy/paste
-  * New: xml text view
-  * New: xml views + xml linkage
-  * Bug:4 - Object::connect: No such slot EditorTabWidget::selec() 
-  * New:1 - Projects toolbar
-  * New:1 - default EditorViewType to settings - general/DefaultOpenViewType,  DefaultView
-  * New:1 - print icon - improved
-  * New:2 - Docs installation and readme.txt
-  * New:4 - Update version to readme.txt
-  * New:1 - cmdline help and version
-  * New:3 - Quit in toolbar (only debug)
-  * New:4 - views: Switching between views
-  * New:3 - XML keywords and started XML saving
-  * New:5 - Item name extracted from xml element in tooltips and fileexplorer
-  * New:3 - all codecs to UTF-8
-  * Chg:3 - ViewType enum refactoring
-  * New:4 - views toolbar, QActionGroup enable/disable when nothing is open
-  * New:5 - Open 1 file only 1x check
-  * Bug:5 - default xml template
-  * Bug:3 - missing restore waiting cursor
-  * Chg:3 - save only when document is modified
-  * Chg:3 - itemNameFromDocument / itemNameFromFile
-  * New:5 - views: Simple text view saving to xml format 1/2
-  * New:1 - File IO debuginfo
-  * Bug:5 - EBTextEdit::writeFile
-  * New:5 - views: Simple text view saving to xml format
-  * New:2 - file explorer: open/delete more files - multiselect
-  * New:5 - License headers, license.txt
-  * New:2 - About dialog
-  * New:5 - when you save file - update file  explorer content - name and date
-  * New:2 - Simple license
-  * Bug:3 - file explorer: multiselection behaviour: MultiSelection  changed to Exte
-  * Chg:4 - proper project and author webpage - new domain and email
-  * New:2 - file explorer:   open as source
-  * New:4 - proper project and author webpage
-  * New:5 - ftp: finish ftp upload
-  * New:3 - Ftp: preparations for download
-  * New:5 - ftp: latest synchro download
-  * Bug:4 - remove saveTextEditToFile
-  * Chg:1 - windows: compile date
-  * Bug:5 win complilation
-  * Bug:4 - Rich view save
-  * Chg:4 - quick fix for first line in DATA 2
-  * New:3 - rpm builds
-  * New:4 - windows install
-  * Chg:2 - rpm package and win install cleaning
-  * New:1 - added view_data icon
-  * Chg:1 - statistic default off
+  * Chg: writefile refactoring, unit test read/write separated
+  * Chg: LE hunting, Data \n logic, New: 2ways of file comparation in unittest
+  * New:3 - File comparation for unit tests
+  * New: Qcompare for long long New: Common test_support.h file
+  * New: Started unittest load/save file comparation in different views Chg: Keywords QList init to static
+  * New: unittest fetching viewtypes
+  * New: full and short versions from git
+  * separated common.pri
+  * New: divided pro file to subdirs
+  * New: 1st unit test for verifying load/save xml format Int: legal stuff
+  * legal stuff
+  * Chg: improved win install
+  * Int: new windows icon
+  * windows icon
+  * New: windows packaging
+  * cleaning
+  * new logo
+  * Chg: gitignore update
+  * Chg: Debian packaging, compatibility build for QT 4.6.2 (Ubuntu 10.10)
   * Chg:1 - full version caption in mainwindow only for debug
- -- Miroslav Safr <miroslav.safr@gmail.com>  Mon, 27 Feb 2012 10:45:06 +0200
-
-easybrain (0.0.1-1) unstable; urgency=low
-  * Chg: Added ifdefs for WIN locking
-  * New: Menu, textedit, open file functionality
-  * New: New File, Project folder, File Timestamp , DataOwner obejct
-  * New: Unix gnome locking
-  * New: save menu and working undo
-  * Fix: Restored window position
-  * New: Hiding on left click on systray icon
-  * New: Working linux installation
-  * New: Version timestamp
-  * New: Export As
-  * New: Quit logic
-  * New: working git describe
-  * New: save and Open dialog object
-  * New: added synchronizations stubs and menu actions
-  * New: projects, synchronizer, defines.h
-  * New: open/export dialogs filters, directories and default export filename
-  * New: Statistics: time and app running timer
-  * New: First icons, working undo
-  * New: FileListWidget
-  * New: FileDock working/archive
-  * New: Project files
-  * New: File groups - not solved doubleclick yet
-  * Fix: fb in file name
-  * Fix: Files - working and archive list
-  * New: DataFolder logic
-  * New: file to work folder
-  * New: general settings
-  * New: Autosave on exit feature
-  * New: Item template,AutosaveOn exit
-  * New: Debugging tools
-  * New: settings
-  * New: new icons
-  * Chg: startup slot
-  * New: Project settings
-  * New: Settings groups, synch settings
-  * New: view debug window menu 
-  * Chg: ProjectFoldersExistCheck
-  * New: backupfunctionality
-  * New: backup view
-  * Fix: debian working
-  * Fix: hudson build
-  * Chg: compile date format
-  * New: Short time insert toolbar
-  * Chg: save before open
-  * Chg: QTreeWidget for file lists
-  * New: Full file info in fileexplorer
-  * New: right click menu
-  * New: working delete file
-  * New: backup external viewer on doubleclick
-  * New: insert date
-  * New: working project settings ini
-  * Chg: ideas devided to changelog and notes
-  * Chg: smaller  tabulator
-  * Fix: seg fault solved
-  * New: added license
-  * Chg: icons in menu gconf value
-  * Fix: directory problem
-  * Fix: delete does not work
-  * New: backup password started
-  * Chg: categories
+  * Chg:1 - statistic default off
+  * added view_data icon
+  * Chg: todo list update
+  * rpm ignore
+  * todo
+  * Chg: rpm package and win install cleaning
+  * windows install
+  * rpm builds
+  * quick fix for first line in DATA 2
+  * Revert "quick fix for first line in DATA - not solved yet"
+  * quick fix for first line in DATA - not solved yet
+  * Bug:4 - Rich view save
+  * bugs_todo
+  * bug:5 win complilation
+  * chg:windows: compile date
+  * Bug:4 - remove saveTextEditToFile New:1 - bold verbs in quiestions Do you want to?
+  * synchronizeCurrent started
+  * icon change
+  * upload latest backup
+  * New:5 - ftp: latest synchro download
+  * ftp dowmload prepared
+  * New: Ftp: preparations for download
+  * New:5 - ftp: finish ftp upload Chg:1 - minor source format update
+  * formating
+  * New:4 - proper project and author webpage
+  * New:2 - file explorer:   open as source
+  * Chg:4 - proper project and author webpage - new domain and email
+  * Bug:3 - file explorer: multiselection behaviour: MultiSelection changed to Exte
+  * New:2 - Simple license
+  * New:5 - when you save file - update file  explorer content - name and date New:4 - name update in the list - on save (document names renaming) Bug:4 - EBTextEdit::itemNameFromDocument() - double string
+  * New:2 - About dialog
+  * New:5 - License headers, license.txt
+  * New:2 - file explorer: open/delete more files - multiselect
+  * New:5 - views: Simple text view saving to xml format New:5 - Save xml EBTextEdit::writeFile() Chg:3 - QMap for keywords to QList/QPair to avoid sorting
+  * Bug:5 - EBTextEdit::writeFile New:1 - close other windows, close icons
+  * New:1 - File IO debuginfo Bug:3 - Initial checked state in View Toolbar, update when view changed or new/open item Chg:5 - EditorTabWidget::saveAsCurrentItem to writeFile New:4 - enable/disable actions in menu an toolbars when no item open Bug:3 - Default view enum strings in conf file New:1 - Copy Full file name icon New:5 - Save xml EBTextEdit::writeFile() 1/2
+  * New:5 - views: Simple text view saving to xml format 1/2 New:5 - Save xml EBTextEdit::writeFile() 1/2
+  * Chg:3 - itemNameFromDocument / itemNameFromFile
+  * cleaning
+  * Chg:3 - save only when document is modified
+  * Bug:3 - missing restore waiting cursor
+  * Bug:5 - default xml template
+  * New:5 - Open 1 file only 1x check
+  * New:4 - views toolbar, QActionGroup enable/disable when nothing is open Chg:1 - new def.svg icon, all graphics to svg
+  * Chg:3 - ViewType enum refactoring
+  * New:3 - all codecs to UTF-8 Bug:5 - deleting files, closing open file tab and file explorer list update
+  * New:5 - Item name extracted from xml element in tooltips and fileexplorer Chg:4 - move m_XmlKeywords to DataOwnerSingl::Keywords, added Txt and Xml keywords
+  * new ideas
+  * New: XML keywords and started XML saving
+  * New:4 - views: Switching between views
+  * New:3 - Quit in toolbar (only debug)
+  * New:1 - cmdline help and version
+  * readme.txt to ignorelist
+  * updated changelog
+  * New:4 - Update version to readme.txt
+  * New: Docs installation and readme.txt
+  * New:1 - print icon - improved
+  * New:1 - default EditorViewType to settings - general/DefaultOpenViewType,  DefaultView New:4 - views - second view plain text/graphicaly formated/source: Text/Source working New:4 - open2 with highlight New:1 - print icon
+  * New:1 - Projects toolbar New:1 - icons: exit, about , new
+  * Bug:4 - Object::connect: No such slot EditorTabWidget::selec() in src/mainwindow.cpp:275 New:1 - runtime QT version New:4 - missing icons Bug:3 - COMPILE_DATE_FORMAT - month and day order New:5 - debug window setname
+  * New: xml views + xml linkage New:5 - debug window setname Fixed: Empty xml definition
+  * New:xml text view
+  * 4 - copy/paste
+  * Fixes: 5 - setDocumentTitle bug New:4 - Qt info in qmake New:2 - ~/QtSDK/Desktop/Qt/474/gcc/bin/qmake
+  * New: Xml format Fixed: filename in argument, signal for clipboard
+  * new idea
+  * New: new ftp upload implementation
+  * New: Working simple ftp upload
+  * New:icons in editor tab according view
+  * New: EditorTabWidget_private and tooltips in editor
+  * New:clipboard preview button - button which would show tooltip or pop window with clipboard content
+  * formatting and date image
+  * Changes:moving filename somewhere else from tabToolTip and set up new tooltip with name
+  * Fixes: various slot changes
+  * Fixes: init editor's rightclick menu
+  * minor formating
+  * New: central editortabwidget - MDI view and refactoring
+  * git version on win
+  * added network module, ftp upload started
+  * New: packing to zip for better compatibility with windows and password support New: project password
   * New: "-t" startup in tray feature
-  * New: packing to zip for better compatibility with windows and password support
-  * New: added network module, ftp upload started
-  * Chg: git version on win
- -- Miroslav Safr <miroslav.safr@gmail.com>  Mon, 21 Dec 2011 10:45:06 +0200
-
-easybrain (0.0.1-1) unstable; urgency=low
-
-  * Initial release
-  * New: .ignore list, changelog, todo list
-  * New: tray icon functionality
+  * Changes: categories
+  * backup password started
+  * Fixes:delete does not work
+  * directory problem
+  * Changes: icons in menu gconf value New Email file Changes: backup not full path
+  * license
+  * seg fault solved
+  * - smaller  tabulator
+  * renaming
+  * changing functions first letter asserts to check file and project names
+  * ideas devided to changelog and notes
+  * working project settings ini backup pictures
+  * insert date
+  * backup external viewer on doubleclick
+  * working delete file
+  * minor header sizes
+  * fileexplorer column sizes remove CR LF from name
+  * - remove 1st col from fileexplorer - copy full file name - removed filename row from file explorer
+  * new item name
+  * removing files half
+  * right click menu
+  * Full file info in fileexplorer
+  * QTreeWidget for file lists
+  * Changes: save before open
+  * New: Short time insert toolbar Changes: save statusbar notice
+  * all
+  * compile date format
+  * again
+  * hudson build
+  * cleaning
+  * debian working
+  * backup view
+  * backup
+  * packing
+  * ProjectFoldersExistCheck
+  * view debug window menu
+  * Settings groups, synch settings
+  * Project settings
+  * minor refactoring
+  * startup slot
+  * more info about qt
+  * string constats
+  * new icons
+  * close debug window
+  * settings
+  * New: Debugging tools
+  * debug macro
+  * Item template,AutosaveOn exit
+  * New: Autosave on exit feature
+  * New: general settings New: new file to file manager
+  * ignore build dir, ideas
+  * new file to work folder
+  * New: DataFolder logic
+  * Fixed: Files - working and archive list
+  * Fixes: fb in file name Fixes: Project Folder New: Files - doubleclick
+  * New: File groups - not solved doubleclick yet
+  * New: Project files
+  * New: FileDock working/archive
+  * New: FileListWidget
+  * New:First icons, working undo
+  * New: Statistics: time and app running timer
+  * New: docking, idea update
+  * New:open/export dialogs filters, directories and default export filename
+  * New:projects, synchronizer, defines.h
+  * added synchronizations stubs and menu actions
+  * New: save and Open dialog object
+  * working git describe
+  * scalable icon
+  * new picture
+  * Minor: Win warning
+  * Minor: Ideas update
+  * New: Quit logic
+  * New: Export As
+  * New: Version timestamp
+  * New: Working linux installation
+  * Fixes: Restored window position \n New: Hiding on left click on systray icon
+  * New: save menu and working undo
+  * New: version git describe New: new tray icon
+  * Unix gnome locking
+  * new ideas
+  * New: New File, Project folder, File Timestamp , DataOwner obejct
+  * New: Menu, textedit, open file functionality
+  * Changes: Added ifdefs for WIN locking New: Empty items format files added
+  * userlib linking
+  * Started 0.0.2
+  * New: TrayIcon logic - immediately on start and shown all the time New: Middle button click on trayicon lock computer (linking with user32.lib)
+  * Changes: removed changelog - will  be generated from git New: combobox for searching
   * New: Small window in right corner
-  * New: TrayIcon logic - immediately on start and shown all the time
- -- Miroslav Safr <miroslav.safr@gmail.com>  Mon, 12 Jun 2011 10:45:06 +0200
+  * New: tray icon functionality New: MainWindow New: add resouces handling
+  * New: .ignore list, changelog, todo list Changes: renamed main.cpp, app name
+  * rename pro file
+  * initial commit
+ -- safrrmir-ul000590 <miroslav.safr@gmail.com>  Wed, 4 Apr 2012 14:42:29 +0300
 

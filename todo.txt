@@ -97,7 +97,7 @@ New:5 - when you save file - update file  explorer content - name and date
 New:4 - name update in the list - on save (document names renaming)
 Bug:4 - EBTextEdit::itemNameFromDocument() - double string
 New:2 - About dialog
-New:5 - License headers, license.txt
+New:5 - License headers, LICENSE.LGPL
 New:2 - file explorer: open/delete more files - multiselect
 New:5 - views: Simple text view saving to xml format
 New:5 - Save xml EBTextEdit::writeFile()

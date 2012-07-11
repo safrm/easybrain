@@ -51,7 +51,7 @@ make install
 %{_datadir}/icons/hicolor/scalable/apps/easybrain.svg
 %{_datadir}/doc/easybrain/readme.txt 
 %{_datadir}/doc/easybrain/todo.txt 
-%{_datadir}/doc/easybrain/license.txt
+%{_datadir}/doc/easybrain/LICENSE.LGPL
 # << files
 
 
