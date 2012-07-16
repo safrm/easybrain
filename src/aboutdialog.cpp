@@ -65,7 +65,7 @@ copyrightLabel->setText(sCopyright);
 WebLink* webPageLabel = new WebLink("safrm.net",QUrl("http://www.safrm.net"),this);
 licenseLayout->addWidget(webPageLabel);
 licenseLayout->addWidget(copyrightLabel);
-WebLink* licenseFilelabel = new WebLink("License",QUrl("/usr/share/doc/easybrain/license.txt"),this);
+WebLink* licenseFilelabel = new WebLink("License",QUrl("/usr/share/doc/easybrain/LICENSE.LGPL"),this);
 
 //BUTTONS
 QPushButton* closeButton = new QPushButton(tr("&Close"));
