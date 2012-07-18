@@ -28,7 +28,7 @@
 #include <QDate>
 
 #ifndef APP_DATE
-#define APP_DATE "1/1/1970"
+#define APP_DATE "201006012_1000"
 #endif
 
 #ifndef APP_VERSION_FULL
@@ -66,7 +66,7 @@ QString Version::getFullString()
 {
     static QString sVersion("");
     if (!sVersion.length())
-       sVersion.sprintf("%s_%s%s%s%s-(compiled:%s)",APPLICATION_NAME,APP_VERSION_FULL,APP_DATE,sz_Platform,sz_BuildType,compileDate().toLatin1().data());
+       sVersion.sprintf("%s_%s_%s%s%s-(compiled:%s)",APPLICATION_NAME,APP_VERSION_FULL,APP_DATE,sz_Platform,sz_BuildType,compileDate().toLatin1().data());
     return sVersion;
 }
 

@@ -1,7 +1,6 @@
 TODO - NEXT STEPS (points 1-5)
 -----------------------------
 Bug:2 - Better Debug/Release detection
-Bug:2 - APP_DATE_SYS on windows
 Bug:3 - Win: installation check
 Bug:3 - Win: qmake copile stuff
 Bug:4 - Text view: delete everything except data and save
@@ -74,6 +73,7 @@ New:1 - online help - http://mywebcom/fwlink/?LinkId=195284
 
 DONE - changelog
 -----------------------------
+Bug:2 - APP_DATE_SYS on windows
 Bug:2 - Automatic versions - Solved git describe on windows
 New:1 - print normal and to pdf
 --- 0.0.5 - opensource ---

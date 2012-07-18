@@ -5,7 +5,7 @@ debug:DEFINES += DEBUG
 debug:message("DEBUG")
 
 unix:APP_DATE_SYS=$$system(date +'\"%Y%m%d_%H%M\"')
-#win32:APP_DATE_SYS=$$system(date /T)
+win32:APP_DATE_SYS=$$system(echo \"%date:~9,4%%date:~6,2%%date:~3,2%_%time:~0,2%%time:~3,2%\")
 message("APP_DATE_SYS = " $$APP_DATE_SYS)
 DEFINES += APP_DATE=\\\"$$APP_DATE_SYS\\\"
 
