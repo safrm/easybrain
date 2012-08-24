@@ -13,6 +13,7 @@ Chg:3 - Readme version to install process
 New:5 - ftp: synchro
 New:3 - merging synchronization conflicts diff, duplicate
 New:5 - removing old files on ftp (keep last x)
+Chg:3 - fixed-width font
 --- 0.0.6  ---
 
 New:4 - new icon PlainData view
