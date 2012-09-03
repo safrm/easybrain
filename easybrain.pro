@@ -26,8 +26,8 @@ docs.files  = todo.txt LICENSE.LGPL readme.txt
 INSTALLS    += readme
 unix:readme.path  = /usr/share/doc/easybrain
 win32:readme.path  = /
-readme.target  = readme-$${APP_VERSION_SHORT}.txt
-readme.commands = sed \'1 s/Easybrain.*/Easybrain $$APP_VERSION_FULL ($$APP_DATE_SYS)/\' readme.txt > readme-$${APP_VERSION_SHORT}.txt
+readme.target  = readme.txt
+readme.commands = sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_VERSION_FULL ($$APP_DATE_SYS)/\' readme.txt && rm -f readme.bkp
 
 win32 {
 QTDIR_BIN = $$system(qmake -query QT_INSTALL_BINS)
