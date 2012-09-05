@@ -9,7 +9,6 @@ Bug:1 - upload icon
 New:3 - linux requires
 New:3 - Export to txt
 Bug:3 - Windows: sed change log version
-Chg:3 - Readme version to install process
 New:5 - ftp: synchro
 New:3 - merging synchronization conflicts diff, duplicate
 New:5 - removing old files on ftp (keep last x)
@@ -75,6 +74,7 @@ New:1 - bubble with some info on trayicon
 
 DONE - changelog
 -----------------------------
+Chg:3 - Readme version to install process
 Bug:2 - APP_DATE_SYS on windows
 Bug:2 - Automatic versions - Solved git describe on windows
 New:1 - print normal and to pdf
