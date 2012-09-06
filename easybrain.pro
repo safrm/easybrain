@@ -20,7 +20,7 @@ unix:readme.path  = /usr/share/doc/easybrain
 win32:readme.path  = /
 readme.files  = readme.txt
 #update readme.txt versions
-readme.commands = sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_FULL_VERSION_TAG ($$APP_BUILD_DATE)/\' readme.txt && rm -f readme.bkp
+unix:readme.commands = sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_FULL_VERSION_TAG ($$APP_BUILD_DATE)/\' readme.txt && rm -f readme.bkp
 
 INSTALLS    += docs
 unix:docs.path  = /usr/share/doc/easybrain
