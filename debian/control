@@ -3,6 +3,7 @@ Section: editors
 Priority: optional
 Maintainer: Miroslav Safr <miroslav.safr@gmail.com>
 Build-Depends: debhelper (>= 5), libqt4-dev (>= 4.7.4), git-core
+Suggest: appver
 Standards-Version: 3.7.3
 Homepage: http://easybrain.safrm.net/
 
