@@ -2,7 +2,7 @@ Easybrain
 -------------------------------------------------------------------------------
 Autor : Miroslav Safr
 Contact: miroslav.safr@gmail.com
-Web: http://safrm.net/projects/easybrain/
+Web: http://easybrain.safrm.net/
 
 Introduction:
 -------------------------------------------------------------------------------

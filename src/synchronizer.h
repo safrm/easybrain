@@ -1,7 +1,7 @@
 /****************************************************************************
 **
 ** Author: Miroslav Safr <miroslav.safr@gmail.com>
-** Web: http://safrm.net/easybrain
+** Web: http://easybrain.safrm.net/
 ** Source: https://github.com/safrm/easybrain
 **
 ** GNU Lesser General Public License Usage

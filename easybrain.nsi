@@ -3,7 +3,7 @@
 !define PRODUCT_NAME "easybrain"
 !define PRODUCT_VERSION "0.1.0"
 !define PRODUCT_PUBLISHER "safrm.net"
-!define PRODUCT_WEB_SITE "http://safrm.net/easybrain/"
+!define PRODUCT_WEB_SITE "http://easybrain.safrm.net/"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\easybrain.exe"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
