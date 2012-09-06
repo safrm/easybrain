@@ -15,19 +15,18 @@ win32:icon.path  = /
 unix:icon.files  = data/easybrain.svg
 win32:icon.files  = data/easybrain.ico
 
-INSTALLS    += docs
-#update readme.txt versions
-#unix:docs.extra = `sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_FULL_VERSION_TAG ($$APP_BUILD_DATE)/\' ./readme.txt && rm readme.txt.bkp`
-unix:docs.path  = /usr/share/doc/easybrain
-win32:docs.path  = /
-docs.files  = todo.txt LICENSE.LGPL readme.txt
-
-
 INSTALLS    += readme
 unix:readme.path  = /usr/share/doc/easybrain
 win32:readme.path  = /
-readme.target  = readme.txt
+readme.files  = readme.txt
+#update readme.txt versions
 readme.commands = sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_FULL_VERSION_TAG ($$APP_BUILD_DATE)/\' readme.txt && rm -f readme.bkp
+
+INSTALLS    += docs
+unix:docs.path  = /usr/share/doc/easybrain
+win32:docs.path  = /
+docs.files  = todo.txt LICENSE.LGPL
+
 
 win32 {
 QTDIR_BIN = $$system(qmake -query QT_INSTALL_BINS)
