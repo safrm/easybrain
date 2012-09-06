@@ -75,7 +75,7 @@ New:1 - bubble with some info on trayicon
 DONE - changelog
 -----------------------------
 Chg:3 - Readme version to install process
-Bug:2 - APP_DATE_SYS on windows
+Bug:2 - APP_BUILD_DATE on windows
 Bug:2 - Automatic versions - Solved git describe on windows
 New:1 - print normal and to pdf
 --- 0.0.5 - opensource ---

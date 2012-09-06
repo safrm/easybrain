@@ -17,7 +17,7 @@ win32:icon.files  = data/easybrain.ico
 
 INSTALLS    += docs
 #update readme.txt versions
-#unix:docs.extra = `sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_VERSION_FULL ($$APP_DATE_SYS)/\' ./readme.txt && rm readme.txt.bkp`
+#unix:docs.extra = `sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_FULL_VERSION_TAG ($$APP_BUILD_DATE)/\' ./readme.txt && rm readme.txt.bkp`
 unix:docs.path  = /usr/share/doc/easybrain
 win32:docs.path  = /
 docs.files  = todo.txt LICENSE.LGPL readme.txt
@@ -27,7 +27,7 @@ INSTALLS    += readme
 unix:readme.path  = /usr/share/doc/easybrain
 win32:readme.path  = /
 readme.target  = readme.txt
-readme.commands = sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_VERSION_FULL ($$APP_DATE_SYS)/\' readme.txt && rm -f readme.bkp
+readme.commands = sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_FULL_VERSION_TAG ($$APP_BUILD_DATE)/\' readme.txt && rm -f readme.bkp
 
 win32 {
 QTDIR_BIN = $$system(qmake -query QT_INSTALL_BINS)

@@ -1,3 +1,5 @@
+appver.pri
+*.bkp
 readme-*.txt
 *.qm
 moc_*
