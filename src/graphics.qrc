@@ -4,8 +4,8 @@
         <file>images/backup_all.svg</file>
         <file>images/backup.svg</file>
         <file>images/clear.svg</file>
-	<file>images/close.svg</file>
-	<file>images/close_other_tabs.svg</file>
+        <file>images/close.svg</file>
+        <file>images/close_other_tabs.svg</file>
         <file>images/copy.svg</file>
         <file>images/cut.svg</file>
         <file>images/debug.svg</file>
@@ -33,5 +33,6 @@
         <file>images/view_source.svg</file>
         <file>images/view_text.svg</file>
         <file>images/def.svg</file>
+        <file>images/upload_latest.svg</file>
     </qresource>
 </RCC>
