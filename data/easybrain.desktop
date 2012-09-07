@@ -1,16 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-# Version of this .desktop file. For software package version see
-# debian/changelog and/or rpm .spec files for version information.
 Version=1.0
 Type=Application
 Name=EasyBrain
 Exec=/usr/bin/easybrain
 Icon=easybrain
-Categories=GNOME;Application;
+Categories=Application;Office;
 X-HildonDesk-ShowInToolbar=true
 X-Window-Icon=easybrain
 X-Window-Icon-Dimmed=easybrain
 X-Osso-Type=application/x-executable
-# Uncomment this line if you are using DBus services
-#X-Osso-Service=com.nokia.qthello
