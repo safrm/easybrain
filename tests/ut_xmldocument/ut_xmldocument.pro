@@ -1,4 +1,4 @@
-#author: Miroslav.Safr@tieto.com 
+#author: Miroslav.Safr@gmail.com 
 include(../common_top.pri)
 TARGET = ut_xmldocument
 
