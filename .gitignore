@@ -54,3 +54,5 @@ debian/files
 install/*
 output/*
 debian/easybrain/*
+debian/changelog
+easybrain.changes
