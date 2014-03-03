@@ -25,7 +25,7 @@ unix:readme.commands = sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_FULL_VERSI
 INSTALLS    += docs
 unix:docs.path  = /usr/share/doc/easybrain
 win32:docs.path  = /
-docs.files  = todo.txt LICENSE.LGPL
+docs.files  = LICENSE.LGPL
 
 
 win32 {
@@ -73,13 +73,11 @@ QMAKE_DISTCLEAN += build/easybrain *.o
 QMAKE_EXTRA_TARGETS += debian-all debian-src debian-bin compiler_clean
 
 OTHER_FILES += \
-    todo.txt \
     src/data/definition.txt \
     src/data/empty.txt \
     debian/changelog \
     debian/rules \
     debian/control \
-    notes.txt \
     src/data/empty.xml \
     readme.txt \
     LICENSE.LGPL
