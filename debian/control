@@ -4,11 +4,12 @@ Priority: optional
 Maintainer: Miroslav Safr <miroslav.safr@gmail.com>
 Build-Depends: debhelper (>= 5), libqt4-dev (>= 4.7.4), git-core
 Suggest: appver
-Standards-Version: 3.7.3
+Standards-Version: 3.8.1
 Homepage: http://easybrain.safrm.net/
 
 Package: easybrain
 Architecture: any
 Depends: libqt4-core, libqt4-gui, libqt4-network, libqt4-xml, libqt4-svg, ${misc:Depends},  ${shlibs:Depends}
-Description: Easybrain is QT based off-line notes editor and manager which uses own ftp/sftp server to synchronise. 
- Notes are text based and stored in XML. It has also some other custom multiplatform features as locking screen, system monitoring.. Developed on Ubuntu, CentOS and Windows.
+Description: QT based off-line notes editor and manager which uses own \ 
+	ftp/sftp server to synchronise.  Notes are text based and stored \
+	in XML. It has also some other custom multiplatform features.. 

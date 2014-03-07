@@ -1,4 +1,4 @@
-Easybrain 
+Easybrain 0.1.2* (20140307_1502)
 -------------------------------------------------------------------------------
 Autor : Miroslav Safr
 Contact: miroslav.safr@gmail.com
@@ -62,6 +62,5 @@ ftp://easybrain/<passwd>/new
 linux:
     /usr/bin/easybrain
     /usr/share/doc/easybrain/readme.txt
-    /usr/share/doc/easybrain/todo.txt
     /usr/share/icons/hicolor/scalable/apps/easybrain.svg
     /usr/share/applications/easybrain.desktop
