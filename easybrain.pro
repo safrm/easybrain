@@ -22,13 +22,15 @@ readme.files  = readme.txt
 #update readme.txt versions
 unix:readme.commands = sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_FULL_VERSION_TAG ($$APP_BUILD_DATE)/\' readme.txt && rm -f readme.bkp
 
+
+
+win32 {
+
 INSTALLS    += docs
 unix:docs.path  = /usr/share/doc/easybrain
 win32:docs.path  = /
 docs.files  = LICENSE.LGPL
 
-
-win32 {
 QTDIR_BIN = $$system(qmake -query QT_INSTALL_BINS)
 message($$QTDIR)
 INSTALLS    += qtlibraries
