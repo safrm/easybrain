@@ -6,5 +6,6 @@ set INSTALL_ROOT=%CD%\install
 IF NOT EXIST output mkdir output
 qmake 
 REM make release
-mingw32-make -f Makefile.Release install
+REM mingw32-make -f Makefile.Release install
+mingw32-make release install
 "C:\Program Files\NSIS\makensis" easybrain.nsi
