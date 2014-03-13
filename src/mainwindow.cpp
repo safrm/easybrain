@@ -83,7 +83,7 @@ class MainWindow_private : public QObject
             tabWidget(NULL),
             currentProjectFileGroup(NULL),
             aboutDialog(NULL)
-    {};
+    {}
     QFileDialog* openFileDialog();
     QFileDialog* exportAsFileDialog();
     QSystemTrayIcon* m_pTrayIcon;
@@ -96,6 +96,7 @@ class MainWindow_private : public QObject
     FileGroupWidget* currentProjectFileGroup;
     AboutDialog* aboutDialog;
 };
+
 QFileDialog* MainWindow_private::openFileDialog()
 {
   if (!m_pOpenFileDialog) {
@@ -205,18 +206,7 @@ void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason)
             break;
     case QSystemTrayIcon::MiddleClick:
         // Lock the workstation.
-#ifdef Q_OS_WIN
-            if ( !LockWorkStation() )
-           qCritical("LockWorkStation failed with %ld\n", GetLastError());
-#endif //Q_OS_WIN
-#ifdef Q_OS_UNIX
-            {
-                QProcess locker;
-                locker.start("gnome-screensaver-command", QStringList() << "-l");
-                locker.waitForStarted();
-                locker.waitForFinished();
-            }
-#endif //Q_OS_UNIX
+        lockScreen();
         break;
     default:
             ;
@@ -359,6 +349,9 @@ void MainWindow::createActions()
     aboutAct->setStatusTip(tr("Show the application's About box"));
     connect(aboutAct, SIGNAL(triggered()), this, SLOT(about()));
 
+    lockScreenAct = new QAction(tr("Lock sreen"), this);
+    lockScreenAct->setShortcut(QKeySequence("Ctrl+Shift+L"));
+    connect(lockScreenAct, SIGNAL(triggered()), this, SLOT(lockScreen()));
 }
 
 void MainWindow::createMenus()
@@ -719,4 +712,20 @@ void MainWindow::showClipboardInToolTip()
 {
     if (QApplication::clipboard()->text() != showClipboardAct->toolTip())
         showClipboardAct->setToolTip(QApplication::clipboard()->text());
+}
+
+void MainWindow::lockScreen()
+{
+#ifdef Q_OS_WIN
+        if ( !LockWorkStation() )
+       qCritical("LockWorkStation failed with %ld\n", GetLastError());
+#endif //Q_OS_WIN
+#ifdef Q_OS_UNIX
+        {
+            QProcess locker;
+            locker.start("gnome-screensaver-command", QStringList() << "-l");
+            locker.waitForStarted();
+            locker.waitForFinished();
+        }
+#endif //Q_OS_UNIX
 }

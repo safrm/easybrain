@@ -714,4 +714,6 @@ void MainWindow::showClipboardInToolTip()
     if (QApplication::clipboard()->text() != showClipboardAct->toolTip())
         showClipboardAct->setToolTip(QApplication::clipboard()->text());
 }
-
+void MainWindow::lockScreen()
+{
+}

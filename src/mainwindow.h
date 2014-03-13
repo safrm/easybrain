@@ -79,6 +79,7 @@ private:
   QAction *insetDateAct;
   QAction *aboutAct;
   QAction *quitAct;
+  QAction *lockScreenAct;
 
 public:
   explicit MainWindow();
@@ -110,6 +111,7 @@ protected slots:
   void startUpSlot();
   void viewDebugWindow(bool bToggled);
   void enableToolbars(int);
+  void lockScreen();
 
 public slots:
   void emailFile(QString filename = QString());
