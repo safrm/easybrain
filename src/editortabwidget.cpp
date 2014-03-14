@@ -449,8 +449,7 @@ void EditorTabWidget::mousePressEvent(QMouseEvent * ev)
       Q_ASSERT(textEdit->documentTitle().size());
       closeTab(textEdit->documentTitle());
     }
-  }
-  else
+  } else
     QTabWidget::mousePressEvent(ev);
 }
 void EditorTabWidget::contextMenuEvent( QContextMenuEvent * event )
@@ -524,10 +523,14 @@ void EditorTabWidget::switchView(QAction* action)
 
 void EditorTabWidget::enableToolbars(int index)
 {
-    if (index == -1 )  //disable some features when there is not open any item
+    if (index == -1 ) {
+      //disable some features when there is not open any item
       changeViewActionGroup()->setDisabled(true);
-    else
+      rightClickMenu()->setDisabled(true);
+    } else {
       changeViewActionGroup()->setEnabled(true);
+      rightClickMenu()->setEnabled(true);
+    }
 }
 
 void EditorTabWidget::updateViewActions(EditorView::Type type)
