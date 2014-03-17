@@ -1,0 +1,93 @@
+'\" t
+.\"     Title: easybrain
+.\"    Author: Miroslav Safr <miroslav.safr@gmail.com>
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: 20140326_0927
+.\"    Manual: Extended recursive search for documents
+.\"    Source: efind 0.1.2
+.\"  Language: English
+.\"
+.TH "EASYBRAIN" "1" "20140326_0927" "efind 0.1.2" "Extended recursive search for"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+easybrain \- QT based off\-line notes editor and manager which uses own ftp/sftp server to synchronise\&. Notes are text based and stored in XML\&. It has also some other custom multiplatform features\&.\&.
+.SH "SYNOPSIS"
+.HP \w'\fBeasybrain\ [OPTIONS]\fR\ 'u
+\fBeasybrain [OPTIONS]\fR [\-h\ \-\-help] [\-t\ \-\-tray] [\-V\ \-\-version]
+.SH "DESCRIPTION"
+.PP
+QT based off\-line notes editor and manager which uses own ftp/sftp server to synchronise\&. Notes are text based and stored in XML\&. It has also some other custom multiplatform features\&.\&.
+.SH "OPTIONS"
+.PP
+\-h \-\-help
+.RS 4
+Print help text to the screen\&.
+.RE
+.PP
+\-t \-\-tray
+.RS 4
+Start minimized in tray\&.
+.RE
+.PP
+\-V \-\-version
+.RS 4
+Prints version to stdout and exits\&.
+.RE
+.SH "CONFIGURATION FILE"
+.PP
+/home/<USER>/\&.config/easybrain/general\&.conf
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+    [General]
+    CurrentProject=test                              ; name of project folder
+    AutoSaveOnExit=true                              ; settings saving
+    UserDataDir=~/eb\-data                            ; path to user data
+    PackingPassword=easybrain123 	                 ; password used for zip encoding
+    DefaultOpenViewType=XmlSource                    ; default view \- XmlSource, Text, RichFormat, OnlyPlainData
+    FtpAddress=ftp://<myftpserver>\&.com/<dir>/        ; server path for synchronization                
+    Username=<FTP\-USERNAME>                          ; ftp username
+    Password=<FTP\-PASSWORD>                          ; ftp password
+    LastSynchTime=<TIMESTAMP>                     ; timestamp of last succesful synchronization
+    
+.fi
+.if n \{\
+.RE
+.\}
+.sp
+.SH "SEE ALSO"
+.PP
+efind(1)\&.
+\m[blue]\fB\%http://safrm.net/projects/easybrain/\fR\m[]
+.SH "AUTHOR"
+.PP
+Miroslav Šafr <miroslav\&.safr@gmail\&.com>
+.SH "LICENSE"
+.PP
+LGPL2
+.SH "AUTHOR"
+.PP
+\fBMiroslav Safr\fR <\&miroslav\&.safr@gmail\&.com\&>
+.RS 4
+Author and maintainer
+.RE

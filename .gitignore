@@ -56,3 +56,4 @@ output/*
 debian/easybrain/*
 debian/changelog
 easybrain.changes
+doc/tmp/*

@@ -2,7 +2,8 @@ TEMPLATE    = subdirs
 include(common.pri)
 
 SUBDIRS += src \
-          tests
+           tests \
+           doc
 
 
 unix:INSTALLS    += desktop

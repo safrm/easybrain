@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<refentry id="easybrain.1">
+
+<refentryinfo>
+    <title>Extended recursive search for documents</title>
+    <author>
+        <personname><firstname>Miroslav</firstname><surname>Safr</surname></personname>
+        <email>miroslav.safr@gmail.com</email>
+        <personblurb><para>Author and maintainer</para></personblurb>
+    </author>
+    <date>2014-03-24</date>
+    <productnumber>NA</productnumber>
+    <productname>efind</productname>
+</refentryinfo>
+
+<refmeta>
+    <refentrytitle>easybrain</refentrytitle>
+	<manvolnum>1</manvolnum>
+</refmeta>
+
+
+<refnamediv>
+    <refname>easybrain</refname>
+    <refpurpose>QT based off-line notes editor and manager which uses own  
+	ftp/sftp server to synchronise.  Notes are text based and stored 
+	in XML. It has also some other custom multiplatform features.. </refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+	<cmdsynopsis>
+        <command>easybrain [OPTIONS]</command>
+        <arg choice="opt">-h --help</arg>
+        <arg choice="opt">-t --tray</arg>
+        <arg choice="opt">-V --version</arg>
+	</cmdsynopsis>
+</refsynopsisdiv>
+
+  <refsect1><title>DESCRIPTION</title>
+    <para>
+      QT based off-line notes editor and manager which uses own  
+	ftp/sftp server to synchronise.  Notes are text based and stored 
+	in XML. It has also some other custom multiplatform features..
+    </para>
+  </refsect1>
+
+  <refsect1>
+    <title>OPTIONS</title>
+
+    <variablelist>
+      <varlistentry><term>-h --help</term>
+        <listitem>
+          <para>
+            Print help text to the screen.
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry><term>-t --tray</term>
+        <listitem>
+          <para>
+               Start minimized in tray.
+          </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry><term>-V --version</term>
+        <listitem>
+          <para>
+            Prints version to stdout and exits.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+    
+  </refsect1>
+  <refsect1>
+    <title>configuration file</title>
+    <para>
+    /home/&lt;USER&gt;/.config/easybrain/general.conf
+    <screen format="linespecific">
+    [General]
+    CurrentProject=test                              ; name of project folder
+    AutoSaveOnExit=true                              ; settings saving
+    UserDataDir=~/eb-data                            ; path to user data
+    PackingPassword=easybrain123 	                 ; password used for zip encoding
+    DefaultOpenViewType=XmlSource                    ; default view - XmlSource, Text, RichFormat, OnlyPlainData
+    FtpAddress=ftp://&lt;myftpserver>.com/&lt;dir&gt;/        ; server path for synchronization                
+    Username=&lt;FTP-USERNAME&gt;                          ; ftp username
+    Password=&lt;FTP-PASSWORD&gt;                          ; ftp password
+    LastSynchTime=&lt;TIMESTAMP&gt;                     ; timestamp of last succesful synchronization
+    </screen>
+    </para>
+  </refsect1>
+
+
+  <refsect1><title>SEE ALSO</title>
+    <para>
+      efind(1).
+      <ulink url="http://safrm.net/projects/easybrain/"/>
+    </para>
+  </refsect1>
+
+  <refsect1>
+    <title>AUTHOR</title>
+    <para>
+        Miroslav Šafr &lt;miroslav.safr@gmail.com&gt;
+    </para>
+  </refsect1>
+  <refsect1>
+  <title>LICENSE</title>
+      <para>
+       LGPL2
+    </para>       
+  </refsect1>
+</refentry>
