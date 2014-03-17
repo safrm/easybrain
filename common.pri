@@ -1,14 +1,19 @@
 #binary and tests
-CONFIG      += debug
+
+#qmake CONFIG+=debug XXX
+CONFIG  += debug
 #CONFIG      -= debug
 debug:DEFINES += DEBUG
-debug:message("DEBUG")
+
+CONFIG(debug, debug|release):message("DEBUG")
+CONFIG(release, debug|release):message("RELEASE")
 
 
 #appver, win/lin version system
 APP_FULL_VERSION_TAG=NA
 APP_SHORT_VERSION_TAG=NA
 unix {
+# packagesExist( appver)
   exists( /usr/bin/appver ) {
     #APP_BUILD_DATE=$$system(/usr/bin/appver | grep APP_BUILD_DATE | awk -F= '{print $2}')
     #APP_FULL_VERSION_TAG=$$system(/usr/bin/appver | grep APP_FULL_VERSION_TAG | awk -F= '{print $2}')

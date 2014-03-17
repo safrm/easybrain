@@ -16,22 +16,8 @@ win32:icon.path  = /
 unix:icon.files  = data/easybrain.svg
 win32:icon.files  = data/easybrain.ico
 
-INSTALLS    += readme
-unix:readme.path  = /usr/share/doc/easybrain
-win32:readme.path  = /
-readme.files  = readme.txt
-#update readme.txt versions
-unix:readme.commands = sed -i".bkp" \'1 s/Easybrain.*/Easybrain $$APP_FULL_VERSION_TAG ($$APP_BUILD_DATE)/\' readme.txt && rm -f readme.bkp
-
-
 
 win32 {
-
-INSTALLS    += docs
-unix:docs.path  = /usr/share/doc/easybrain
-win32:docs.path  = /
-docs.files  = LICENSE.LGPL
-
 QTDIR_BIN = $$system(qmake -query QT_INSTALL_BINS)
 message($$QTDIR)
 INSTALLS    += qtlibraries
@@ -41,7 +27,6 @@ qtlibraries.files = \
     $$QTDIR_BIN/libgcc_s_dw2-1.dll
 
   release {
-
     qtlibraries.files += \    
       $$QTDIR_BIN/QtCore4.dll \
       $$QTDIR_BIN/QtGui4.dll \
@@ -81,6 +66,4 @@ OTHER_FILES += \
     debian/changelog \
     debian/rules \
     debian/control \
-    src/data/empty.xml \
-    readme.txt \
-    LICENSE.LGPL
+    src/data/empty.xml
