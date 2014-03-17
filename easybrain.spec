@@ -36,7 +36,8 @@ rm -rf %{buildroot}
 export INSTALL_ROOT=%{buildroot}
 make install
 
-
+%clean
+rm -fr %{buildroot}
 
 %files
 %defattr(-,root,root,-)
