@@ -42,7 +42,7 @@ void print_help()
     printf("########################################\n");
     printf("-h  --help      print command line usage\n");
     printf("-t  --tray      start minimized in tray\n");
-    printf("-v  --version   print version\n");
+    printf("-V  --version   print version\n");
     exit(0);
 }
 
@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
         sParam = qApp->arguments().at(i);
         if (sParam == "-t"  || sParam == "--tray") { //start in tray
             bStartInTray = true;
-        } else if (sParam == "-v" || sParam == "--version") {
+        } else if (sParam == "-V" || sParam == "--version") {
             print_version();
         } else if (sParam == "-h" || sParam == "--help") {
             print_help();

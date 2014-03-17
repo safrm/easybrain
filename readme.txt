@@ -23,7 +23,7 @@ command line parameters:
 -------------------------------------------------------------------------------
 -h  --help      print command line usage
 -t  --tray      start minimized in tray
--v  --version   print version
+-V  --version   print version
 
 
 configuration file
