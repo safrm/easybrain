@@ -1,10 +1,7 @@
 TEMPLATE    = subdirs
 include(common.pri)
 
-SUBDIRS += src \
-           tests \
-           doc
-
+SUBDIRS += src tests doc
 
 unix:INSTALLS    += desktop
 unix:desktop.path  = /usr/share/applications
