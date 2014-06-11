@@ -46,5 +46,5 @@ rm -fr %{buildroot}
 %{_datadir}/icons/hicolor/scalable/apps/easybrain.svg
 %dir %{_datadir}/doc/easybrain
 %{_datadir}/doc/easybrain/readme.txt 
-
+%{_mandir}/man1/easybrain.1*
 
