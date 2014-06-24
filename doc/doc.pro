@@ -8,10 +8,12 @@ QMAKE_EXTRA_COMPILER += doc
 doc.target        = htmlpages/easybrain.html
 doc.CONFIG       += no_check_exist no_link explicit_dependencies disable_check
 
-packagesExist(jenkins-support-scripts) {
-    doc.commands = @echo "Not installed jenkins-support-scripts"
-} else {
-    doc.commands      = jss-docs-update . -sv $$APP_FULL_VERSION_TAG
+unix {
+    exists( /usr/bin/jss-docs-update ) {
+        doc.commands      = jss-docs-update . -sv $$APP_FULL_VERSION_TAG
+    } else {
+        doc.commands = @echo "Not installed jenkins-support-scripts"
+    }
 }
 doc.input         = $${doc.depends}
 doc.output        = $${doc.target}
