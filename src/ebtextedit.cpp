@@ -153,7 +153,10 @@ bool EBTextEdit::writeFile(QString sFileName )
         if (!document()->find(DataOwnerSingl::TxtKeywords::KEYWORD_DATA).isNull()) {
             cursor.movePosition(QTextCursor::EndOfWord, QTextCursor::MoveAnchor); //remove txt keyword from selection
             iDataCursorPosition = document()->find(DataOwnerSingl::TxtKeywords::KEYWORD_DATA).position();
+            //qDebug() << "First data char:" <<  document()->characterAt(iDataCursorPosition) << "Next data char:" <<  document()->characterAt(iDataCursorPosition+1);
             //\n should be part of TxtKeywords::KEYWORD_DATA but it can be deleted..
+            if(document()->characterAt(iDataCursorPosition) == QChar('\r'))
+                ++iDataCursorPosition;
             if(document()->characterAt(iDataCursorPosition) == QChar('\n'))
                 ++iDataCursorPosition;
         }
@@ -190,7 +193,7 @@ bool EBTextEdit::writeFile(QString sFileName )
     //select from iDataCursorPosition till end - if tag is missing it is empty, with \n correction
     cursor.setPosition(iDataCursorPosition, QTextCursor::MoveAnchor);
     cursor.movePosition(QTextCursor::End, QTextCursor::KeepAnchor);
-    QDomCDATASection data = xmlDocument.createCDATASection(cursor.selectedText());
+    QDomCDATASection data = xmlDocument.createCDATASection(cursor.selectedText().replace(QChar(0x2029), QChar('\n')));
     tag.appendChild(data);
 
     //qDebug()<< "save XML:" << xmlDocument.toString();
