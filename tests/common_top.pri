@@ -13,3 +13,7 @@ HEADERS += $$TESTS_DIR/test_support.h
 # install tests
 #target.path = $$[QT_INSTALL_LIBS]/tests
 #INSTALLS += target
+
+QMAKE_EXTRA_TARGETS += check
+check.depends = $$TARGET
+check.commands = @ ./$$TARGET
