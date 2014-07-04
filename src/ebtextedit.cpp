@@ -154,7 +154,7 @@ bool EBTextEdit::writeFile(QString sFileName )
             cursor.movePosition(QTextCursor::EndOfWord, QTextCursor::MoveAnchor); //remove txt keyword from selection
             iDataCursorPosition = document()->find(DataOwnerSingl::TxtKeywords::KEYWORD_DATA).position();
             //\n should be part of TxtKeywords::KEYWORD_DATA but it can be deleted..
-            if(document()->characterAt(iDataCursorPosition) == QChar('\n') ) //QChar::LineSeparator()
+            if(document()->characterAt(iDataCursorPosition) == QChar('\n'))
                 ++iDataCursorPosition;
         }
 

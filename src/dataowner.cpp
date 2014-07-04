@@ -62,21 +62,21 @@ const QString DataOwnerSingl::XmlKeywords::KEYWORD_PRIORITY("priority");
 const QString DataOwnerSingl::XmlKeywords::KEYWORD_TAGS("tags");
 const QString DataOwnerSingl::XmlKeywords::KEYWORD_DATA("data");
 
-const QString DataOwnerSingl::DefaultItemTemplate = QString("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>") + QString(QChar::LineSeparator) + QString("<")
-        + DataOwnerSingl::XmlKeywords::KEYWORD_ITEM +     ">" + QString(QChar::LineSeparator) + QString("<")
+const QString DataOwnerSingl::DefaultItemTemplate = QString("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>") + QString("\r\n<")
+        + DataOwnerSingl::XmlKeywords::KEYWORD_ITEM +     ">" + QString("\r\n<")
         + DataOwnerSingl::XmlKeywords::KEYWORD_NAME +     ">Name</"
-        + DataOwnerSingl::XmlKeywords::KEYWORD_NAME +     ">" + QString(QChar::LineSeparator) + QString("<")
+        + DataOwnerSingl::XmlKeywords::KEYWORD_NAME +     ">" + QString("\r\n<")
         + DataOwnerSingl::XmlKeywords::KEYWORD_DATE +     ">2011_12_21_13:23</"
-        + DataOwnerSingl::XmlKeywords::KEYWORD_DATE +     ">" + QString(QChar::LineSeparator) + QString("<")
+        + DataOwnerSingl::XmlKeywords::KEYWORD_DATE +     ">"+ QString("\r\n<")
         + DataOwnerSingl::XmlKeywords::KEYWORD_GROUPS +   ">one,two</"
-        + DataOwnerSingl::XmlKeywords::KEYWORD_GROUPS +   ">" + QString(QChar::LineSeparator) + QString("<")
+        + DataOwnerSingl::XmlKeywords::KEYWORD_GROUPS +   ">"+ QString("\r\n<")
         + DataOwnerSingl::XmlKeywords::KEYWORD_PRIORITY + ">1</"
-        + DataOwnerSingl::XmlKeywords::KEYWORD_PRIORITY + ">" + QString(QChar::LineSeparator) + QString("<")
+        + DataOwnerSingl::XmlKeywords::KEYWORD_PRIORITY + ">" + QString("\r\n<")
         + DataOwnerSingl::XmlKeywords::KEYWORD_TAGS +     ">tag1,tag2</"
-        + DataOwnerSingl::XmlKeywords::KEYWORD_TAGS +     ">" + QString(QChar::LineSeparator) + QString("<")
-        + DataOwnerSingl::XmlKeywords::KEYWORD_DATA +     "><![CDATA[" + QString(QChar::LineSeparator) + " Example text with html tags" + QString(QChar::LineSeparator) + QString(QChar::LineSeparator) + "      ]]></"
-        + DataOwnerSingl::XmlKeywords::KEYWORD_DATA +     ">" + QString(QChar::LineSeparator) + QString("</")
-        + DataOwnerSingl::XmlKeywords::KEYWORD_ITEM +     ">" + QString(QChar::LineSeparator) + QString("<");
+        + DataOwnerSingl::XmlKeywords::KEYWORD_TAGS +     ">" + QString("\r\n<")
+        + DataOwnerSingl::XmlKeywords::KEYWORD_DATA +     "><![CDATA[" + QString("\r\n") + " Example text with html tags" + QString("\r\n")  + QString("\r\n")  + "      ]]></"
+        + DataOwnerSingl::XmlKeywords::KEYWORD_DATA +     ">"+ QString("\r\n</")
+        + DataOwnerSingl::XmlKeywords::KEYWORD_ITEM +     ">";
 
 
 const QList< QPair<QString, QString> > DataOwnerSingl::XmlKeywords::Keywords = QList< QPair<QString, QString> >()
