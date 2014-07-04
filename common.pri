@@ -5,6 +5,11 @@ CONFIG  += debug
 #CONFIG      -= debug
 debug:DEFINES += DEBUG
 
+#for 32bit complilation on 64bits
+#    CONFIG += x86 ppc
+#    CONFIG -= x86_64 ppc64
+
+
 CONFIG(debug, debug|release):message("DEBUG")
 CONFIG(release, debug|release):message("RELEASE")
 
@@ -51,6 +56,9 @@ message("QMAKE_QT_DLL = " $${QMAKE_QT_DLL})
 DEFINES += APPLICATION_NAME=\\\"${QMAKE_TARGET}\\\"
 
 QT          = core gui network xml
+greaterThan(QT_MAJOR_VERSION, 4) {
+    QT += widgets
+}
 
 # All generated files goes to the same directory
 win32:INSTALL_ROOT= /progs/easybrain

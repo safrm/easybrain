@@ -48,11 +48,14 @@ void print_help()
 
 int main(int argc, char *argv[])
 {
+#if (QT_VERSION < QT_VERSION_CHECK(5, 0, 0))
     QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
     QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
 
     qInstallMsgHandler(Debug::mMessageHandler);
+#endif
+
     qDebug() << "######" << Version::getFullString();
     //print cmdline options
     for(int i=1; i < argc; ++i) {
