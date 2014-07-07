@@ -62,3 +62,11 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 
 # All generated files goes to the same directory
 win32:INSTALL_ROOT= /progs/easybrain
+
+# To use compiler cache by default if installed
+exists( /usr/bin/ccache ) {
+    message("Using compiler cache")
+    QMAKE_CC = ccache gcc
+    QMAKE_CXX = ccache g++
+}
+
